@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf8">
+            <style>
+                
+                @keyframes logo-jumping{
+                    0%{
+                        margin-top:0%;
+                    }
+
+                    50%{
+                        margin-top:5%;
+                    }
+
+                    100%{
+                        margin-top:0%;
+                    }
+                }
+
+                body{
+                    background-color:#082b43;
+                }
+                .entry{
+                    width:50%;
+                    height:50%;
+                    margin:auto;
+                    text-align:center;
+                    margin-top:15%;
+                }
+
+                .entryimg{
+                    width:200px;
+                    height:200px;
+                }
+
+                .entryimg:hover{
+                    animation-name:logo-jumping;
+                    animation-duration:1s;
+                    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+                    animation-iteration-count:unset;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="entry">
+            <a href="minsubar.html">
+                <img class="entryimg" src="logo.png">
+            </a>
+        </div>
+    </body>
+</html>

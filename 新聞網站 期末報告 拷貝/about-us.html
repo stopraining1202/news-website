@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+<style type="text/css">
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    /*要從左邊一路排過去*/
+    width: 33.3%;
+    /*表示下面三張照片是一橫列*/
+    margin-bottom: 16px;
+    /*長方形之間的距離*/
+    padding: 0 8px;
+    /*重疊*/
+  }
+
+  .logo {
+    max-width: 50%;
+    display: inline-block;
+  }
+
+  .logo img {
+    height: 90%;
+    width: 90%;
+    align-items: center;
+    padding-left: 30%;
+    margin-top:13px;
+  }
+
+  .whoareus {
+    max-width: 50%;
+    display: inline-block;
+    padding-right: 25%;
+  }
+
+ 
+  
+
+  @media all and (max-width: 750px) {
+    .column {
+      width: 100%;
+      display: block;
+      float: none;
+    }
+
+    
+
+    .whoareus{
+      display:block;
+      padding-right:0;
+      width:500px;
+      margin:0 auto;
+    }
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFB;
+    /*象牙白*/
+  }
+
+  .containerimg {
+    padding: 0 50px;
+    background-color: #B0271D;
+    /*紅色*/
+    opacity: 0.6;
+    color: white;
+  }
+
+  .containerimg::after,
+  .row::after {
+    /*content: "";*/
+    clear: both;
+    display: table;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  h2 {
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  h3 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  nav {
+
+    position: absolute;
+    top: 50px;
+    right: 0%;
+    font-size: 18px;
+    padding-right: 10%;
+  }
+
+  @media all and (max-width: 1070px) {
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      margin-top: -10px;
+      font-family: sans-serif;
+    }
+
+    nav {
+      top: 35px;
+      position: absolute;
+      font-size: 12px;
+      right: 0%;
+
+    }
+
+    .logo img{
+      padding-left:0;
+    }
+
+    .whoareus{
+      padding-right:0;
+      }
+    
+    section{
+      text-align:center;
+    }
+  }
+</style>
+
+<head>
+  <title>民俗bar</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <h1 style="color: #B0271D; text-align: center;"> Minsu bar</h1>
+  <!--navigation bar-->
+  <nav>
+
+    <a href="#" style="color: #000000;text-decoration: none;"><span
+        style="padding-bottom: 5px;border-bottom: 2px solid #000000;margin: 10px;">專題</span></a>
+
+    <a href="#" style="color: #000000;text-decoration: none;"><span
+        style="padding-bottom: 5px;border-bottom: 2px solid #000000;margin: 10px;">影音</span></a>
+    <a href="#" style="color: #000000;text-decoration: none;"><span
+        style="padding-bottom: 5px;border-bottom: 2px solid #000000;margin: 10px;">文字</span></a></nav>
+
+</head>
+<br><br><br><br><br><br>
+
+<body>
+  <section>
+    <div class="logo">
+      <img src="logo.png">
+    </div>
+    <div class="whoareus" >
+
+      <h2>我們是誰？</h2>
+      <br>
+      <p>一群酒鬼, 為了一堂課, 架了一個網站。</p>
+      <p>但能力不足，所以沒有寫太多的頁面。</p>
+      <br>
+      <p>對我們來說, 喝酒是種「民俗」。</p>
+      <p>但對台灣人來說，許多民俗正在消失</p>
+      <p>誠心希望能分享這些民俗活動給大家。</p>
+    </div>
+
+  </section>
+
+  <section>
+
+    <br><br><br><br><br><br><br><br>
+    <h3 style="text-align: center;"> 團隊成員 TEAM MEMBER</h3>
+    <div style="width: 60%; margin:auto;">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="about-us-jeanie.png" style="width:100%" />
+            <div class="containerimg">
+              <h4 style="text-align:center;">好酒</h4>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="about-us-stopraining.png" style="width:100%" />
+            <div class="containerimg">
+              <h4 style="text-align:center;">好酒</h4>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="about-us-fanyu.png" style="width:100%" />
+            <div class="containerimg">
+              <h4 style="text-align:center;">好酒</h4>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="about-us-yuwei.png" style="width:100%" />
+            <div class="containerimg">
+              <h4 style="text-align:center;">好酒</h4>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="about-us-tong.png" style="width:100%" />
+            <div class="containerimg">
+              <h4 style="text-align:center;">好酒</h4>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="about-us-jerry.png" style="width:100%" />
+            <div class="containerimg">
+              <h4 style="text-align:center;">好酒</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+</body>
+
+</html>

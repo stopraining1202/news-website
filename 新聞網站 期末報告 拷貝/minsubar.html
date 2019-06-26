@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+
+        @keyframes taipei-opacity-0-100-0 {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 100;
+            }
+
+            40% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes taichung-opacity-0-100-0 {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 100;
+            }
+
+            60% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes tainan-opacity-0-100-0 {
+            0% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 100;
+            }
+
+            80% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes pintong-opacity-0-100-0 {
+            0% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 0;
+            }
+
+            80% {
+                opacity: 100;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+
+        body {
+            background-color: #082b43;
+            font-family: "source-han-serif-tc", "PMingLiU", "SimSun", serif;
+
+        }
+
+        h5 {
+            font-weight: bolder;
+            line-height:90px;
+        }
+
+        nav {
+            display: flex;
+            width: 100vw;
+            justify-content: space-between;
+            background-color: #202020;
+            min-height: 100px;
+        }
+
+        .logo {
+            height: 100px;
+            width: auto;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+
+        nav ul li {
+
+            font-size: 24px;
+            color: #ececec;
+            padding: 15px 30px;
+
+        }
+
+
+        .carousel-item h5 {
+
+            position: absolute;
+            font-size: 60px;
+            bottom: 150px;
+            left: 150px;
+            color: #ffffff;
+        }
+
+        .minsuarti {
+            width: 100vw;
+            height: 100vh;
+            background-color: #082b43;
+        }
+
+        h2 {
+            font-size: 50px;
+            color: #adadad;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 100px;
+            width: 300px;
+            text-align: center;
+
+        }
+
+        .minsucard {
+            width: 100vw;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            margin-top: 100px;
+        }
+
+        .minsufoto {
+            width: 33.3vw;
+            height: auto;
+            position: relative;
+        }
+
+        .minsufoto a h2 {
+            position: absolute;
+            font-size: 40px;
+            color: #ffffff;
+            width: 100%;
+            text-align: center;
+            top: 250px;
+            padding: 0px;
+        }
+
+        .minsufoto a img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            position: absolute;
+            transition: opacity 0.2s linear 0s;
+        }
+
+        .minsufoto a img:nth-of-type(2):hover {
+            opacity: 0;
+        }
+
+
+        .taiwanmap {
+            width: calc(340/375*100%);
+            padding-bottom: calc(461/340*100%);
+            position: relative;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .keelong {
+            position: absolute;
+            width: calc(21/340*100%);
+            height: calc(14/461*100%);
+            left: calc(276/340*100%);
+            bottom: calc(430/461*100%);
+
+        }
+
+        .pintong {
+            position: absolute;
+            width: calc(60/340*100%);
+            height: calc(130/461*100%);
+            left: calc(123/340*100%);
+            bottom: 0;
+
+        }
+
+        .pintong1 {
+            position: absolute;
+            width: calc(173/340*100%);
+            height: calc(131/461*100%);
+            left: calc(123/340*100%);
+            bottom: 0;
+            opacity: 0;
+        }
+
+        .pintong1:hover {
+            opacity: 100;
+        }
+
+        .kaoshung {
+            position: absolute;
+            width: calc(110/340*100%);
+            height: calc(133/461*100%);
+            left: calc(92/340*100%);
+            bottom: calc(78/461*100%);
+
+        }
+
+        .tainan {
+            position: absolute;
+            width: calc(77/340*100%);
+            height: calc(69/461*100%);
+            left: calc(75/340*100%);
+            bottom: calc(134/461*100%);
+        }
+
+        .tainan1 {
+            position: absolute;
+            width: calc(148/340*100%);
+            height: calc(140/461*100%);
+            left: calc(4/340*100%);
+            bottom: calc(134/461*100%);
+            opacity: 0;
+        }
+
+        .tainan1:hover {
+            opacity: 100;
+        }
+
+        .chiaicity {
+            position: absolute;
+            width: calc(14/340*100%);
+            height: calc(9/461*100%);
+            left: calc(119/340*100%);
+            bottom: calc(209/461*100%);
+
+        }
+
+        .chiai {
+            position: absolute;
+            width: calc(100/340*100%);
+            height: calc(55/461*100%);
+            left: calc(86/340*100%);
+            bottom: calc(178/461*100%);
+
+        }
+
+        .yunlin {
+            position: absolute;
+            width: calc(74/340*100%);
+            height: calc(43/461*100%);
+            left: calc(87/340*100%);
+            bottom: calc(218/461*100%);
+
+        }
+
+        .chunhua {
+            position: absolute;
+            width: calc(52/340*100%);
+            height: calc(54/461*100%);
+            left: calc(103/340*100%);
+            bottom: calc(256/461*100%);
+
+        }
+
+        .taichung {
+            position: absolute;
+            width: calc(119/340*100%);
+            height: calc(58/461*100%);
+            left: calc(132/340*100%);
+            bottom: calc(285/461*100%);
+
+
+
+        }
+
+        .taichung1 {
+            position: absolute;
+            width: calc(247/340*100%);
+            height: calc(129/461*100%);
+            left: calc(4/340*100%);
+            bottom: calc(285/461*100%);
+            opacity: 0;
+
+        }
+
+        .taichung1:hover {
+            opacity: 100;
+
+        }
+
+        .miaoli {
+            position: absolute;
+            width: calc(78/340*100%);
+            height: calc(59/461*100%);
+            left: calc(149/340*100%);
+            bottom: calc(325/461*100%);
+
+        }
+
+        .hsinchucity {
+            position: absolute;
+            width: calc(15/340*100%);
+            height: calc(16/461*100%);
+            left: calc(183/340*100%);
+            bottom: calc(383/461*100%);
+
+        }
+
+        .hsinchu {
+            position: absolute;
+            width: calc(58/340*100%);
+            height: calc(69/461*100%);
+            left: calc(188/340*100%);
+            bottom: calc(343/461*100%);
+
+        }
+
+        .tauyuan {
+            position: absolute;
+            width: calc(60/340*100%);
+            height: calc(71/461*100%);
+            left: calc(195/340*100%);
+            bottom: calc(365/461*100%);
+
+        }
+
+        .newtaipeicity {
+            position: absolute;
+            width: calc(87/340*100%);
+            height: calc(83/461*100%);
+            left: calc(233/340*100%);
+            bottom: calc(378/461*100%);
+
+        }
+
+        .taipeicity {
+            position: absolute;
+            width: calc(20/340*100%);
+            height: calc(31/461*100%);
+            left: calc(255/340*100%);
+            bottom: calc(417/461*100%);
+        }
+
+        .taipeicity1 {
+            position: absolute;
+            width: calc(108/340*100%);
+            height: calc(132/461*100%);
+            left: calc(205/340*100%);
+            bottom: calc(317/461*100%);
+            opacity: 0;
+        }
+
+        .taipeicity1:hover {
+            opacity: 100;
+        }
+
+        .ilan {
+            position: absolute;
+            width: calc(73/340*100%);
+            height: calc(90/461*100%);
+            left: calc(238/340*100%);
+            bottom: calc(328/461*100%);
+
+        }
+
+        .hualian {
+            position: absolute;
+            width: calc(95/340*100%);
+            height: calc(169/461*100%);
+            left: calc(196/340*100%);
+            bottom: calc(163/461*100%);
+
+        }
+
+        .taitong {
+            position: absolute;
+            width: calc(93/340*100%);
+            height: calc(162/461*100%);
+            left: calc(164/340*100%);
+            bottom: calc(44/461*100%);
+
+        }
+
+        .nantou {
+            position: absolute;
+            width: calc(90/340*100%);
+            height: calc(108/461*100%);
+            left: calc(150/340*100%);
+            bottom: calc(208/461*100%);
+        }
+
+        footer {
+            width: 100vw;
+            padding-bottom:calc(500/1440*100%);
+            margin-top:100px;
+            position:relative;
+        }
+
+        .footlogo {
+            position:absolute;
+            width:calc(1440/1440*100%);
+            height:calc(500/500*100%);
+            bottom:0;
+            left:0;
+        }
+
+        .aboutus{
+            position:absolute;
+            width:calc(280/1440*100%);
+            height:calc(210/500*100%);
+            left:calc(580/1440*100%);
+            bottom:calc(240/500*100%);
+        }
+        @media all and (max-width:1024px) {
+            .carousel-item>h5 {
+                position: absolute;
+                font-size: 40px;
+                bottom: 30px;
+                left: 30px;
+                color: #ffffff;
+            }
+
+            .minsuarti {
+                height: auto;
+            }
+
+            .minsucard {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            .minsufoto a h5 {
+                margin: 30px auto 60px auto;
+                font-size: 30px;
+                color: #ececec;
+                text-align: center;
+            }
+
+            .minsufoto {
+                width: 40%;
+                margin-left: auto;
+                margin-right: auto;
+                position: static;
+                float: left;
+
+            }
+
+            .minsufoto a img {
+                position: static;
+            }
+
+            .minsufoto a img:nth-of-type(2) {
+                display: none;
+            }
+
+            .taipeicity1 {
+                animation-name: taipei-opacity-0-100-0;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            .taichung1 {
+                animation-name: taichung-opacity-0-100-0;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            .tainan1 {
+                animation-name: tainan-opacity-0-100-0;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+
+            .pintong1 {
+                animation-name: pintong-opacity-0-100-0;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+        }
+
+
+        @media all and (max-width: 720px) {
+            nav ul li {
+                font-size: 20px;
+            }
+
+            .carousel-item>h5 {
+                position: absolute;
+                font-size: 30px;
+                bottom: 20px;
+                left: 20px;
+                color: #ffffff;
+            }
+
+            .minsuarti {
+                height: auto;
+            }
+
+            .minsucard {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            .minsufoto a h5 {
+                margin: 30px auto 60px auto;
+                font-size: 30px;
+                color: #ececec;
+                text-align: center;
+            }
+
+            .minsufoto {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                position: static;
+
+            }
+
+            .minsufoto a img {
+                position: static;
+            }
+
+            .minsufoto a img:nth-of-type(2) {
+                display: none;
+            }
+
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--navigator bar-->
+
+
+ <!--Slide-->
+ <div id="carouselExampleControls" class="carousel slide" style="width:100vw" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="position:relative">
+                <a href="fire-boat-festival.html"><img class="d-block w-100" src="hero-image-fireboat.png" alt="First slide"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img  class="d-block w-100" src="hero-image-idol-recovery.png" alt="Second slide"></a>
+                
+            </div>
+            <div class="carousel-item">
+               <a href="straying-gods.html"> <img class="d-block w-100" src="hero-image-straying-gods.png" alt="Third slide"></a>
+                
+            </div>
+            <div class="carousel-item">
+                <a href="gtong.html"><img class="d-block w-100" src="hero-image-gtong.jpg" alt="Forth slide"></a>
+                
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--圖文-->
+
+    <div class="minsuarti">
+        <h2>民俗圖輯</h2>
+        <div class="minsucard">
+            <div class="minsufoto">
+                <a h>
+
+                    <img src="minsufoto-01.jpg">
+                    <img src="Background.jpg">
+                    <h5>全民瘋媽祖</h5>
+
+                </a>
+            </div>
+            <div class="minsufoto">
+                <a>
+                    <img src="minsufoto-02.jpg">
+                    <img src="Background.jpg">
+                    <h5>家將少年舞</h5>
+                </a>
+            </div>
+            <div class="minsufoto">
+                <a>
+                    <img src="minsufoto-03.jpg">
+                    <img src="Background.jpg">
+                    <h5>台灣民俗誌</h5>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h2>台灣民俗地圖</h2>
+
+    <div class="taiwanmap">
+        <img class="keelong" src="taiwanmap/資產 3taiwanmap.png">
+        <img class="taipeicity" src="taiwanmap/資產 2taiwanmap.png">
+        <img class="newtaipeicity" src="taiwanmap/資產 4taiwanmap.png">
+        <img class="tauyuan" src="taiwanmap/資產 5taiwanmap.png">
+        <img class="hsinchucity" src="taiwanmap/資產 7taiwanmap.png">
+        <img class="hsinchu" src="taiwanmap/資產 6taiwanmap.png">
+        <img class="miaoli" src="taiwanmap/資產 8taiwanmap.png">
+        <img class="taichung" src="taiwanmap/資產 9taiwanmap.png">
+        <img class="taichung1" src="taiwanmap/資產 21taiwanmap.png">
+        <img class="chunhua" src="taiwanmap/資產 11taiwanmap.png">
+        <img class="yunlin" src="taiwanmap/資產 12taiwanmap.png">
+        <img class="chiai" src="taiwanmap/資產 13taiwanmap.png">
+        <img class="chiaicity" src="taiwanmap/資產 14taiwanmap.png">
+        <img class="tainan" src="taiwanmap/資產 15taiwanmap.png">
+        <img class="tainan1" src="taiwanmap/資產 22taiwanmap.png">
+        <img class="kaoshung" src="taiwanmap/資產 16taiwanmap.png">
+        <img class="pintong" src="taiwanmap/資產 17taiwanmap.png">
+        <img class="taitong" src="taiwanmap/資產 18taiwanmap.png">
+        <img class="pintong1" src="taiwanmap/資產 23taiwanmap.png">
+        <img class="hualian" src="taiwanmap/資產 19taiwanmap.png">
+        <img class="ilan" src="taiwanmap/資產 20taiwanmap.png">
+        <img class="nantou" src="taiwanmap/資產 10taiwanmap.png">
+        <img class="taipeicity1" src="taiwanmap/資產 24taiwanmap.png">
+
+    </div>
+
+    <footer>
+        <img class="footlogo" src="footer.png">
+        <a href="about-us.html"><img class="aboutus" src="about-us.png"></a>
+
+    </footer>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>

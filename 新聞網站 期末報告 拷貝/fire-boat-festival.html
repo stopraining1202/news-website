@@ -1,0 +1,347 @@
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #082b43;
+        }
+
+        .full-screen {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            top: 0;
+            left: 0;
+            
+        }
+
+        .full-screen img {
+            object-fit: cover;
+        }
+
+        .fireboat {
+            width: 100%;
+            padding: 0;
+
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 18px;
+            width: 586px;
+            font-family: "Noto serif", "PMingLiU", "SimSun", serif;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: white;
+            position: absolute;
+            bottom: 0px;
+            left: 60px;
+            font-size: 75px;
+            font-family: "source-han-serif-tc", "PMingLiU", "SimSun", serif;
+            font-weight: bolder;
+
+            line-height: 130px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-weight: normal;
+            font-family: "source-han-serif-tc", "PMingLiU", "SimSun", serif;
+            margin-left: auto;
+            margin-right: auto;
+            width: 700px;
+            margin-top: 250px;
+            font-size: 30px;
+            line-height: 50px;
+
+        }
+
+        blockquote {
+            width: 80%;
+            font-size: 16px;
+            font-weight: bold;
+            color: #eac100;
+            text-align: right;
+            line-height: 34px;
+            border-width: 0 0 1.5 0;
+            border-color: #eac100;
+            border-style: solid;
+
+            margin-left: 150px;
+            font-family: "source-han-serif-tc", "PMingLiU", "SimSun", serif;
+
+        }
+
+        @keyframes route {
+            0% {
+                transform: translateX(760%)translateY(450%);
+            }
+
+            9% {
+                transform: translateX(610%)translateY(330%);
+
+            }
+
+            18% {
+                transform: translateX(640%)translateY(300%);
+            }
+
+            27% {
+                transform: translateX(695%) translateY(310%);
+
+            }
+
+            36% {
+                transform: translateX(820%) translateY(230%);
+            }
+
+            45% {
+                transform: translateX(930%)translateY(390%);
+            }
+
+            54% {
+                transform: translateX(1200%)translateY(260%);
+            }
+
+
+            63% {
+                transform: translateX(930%)translateY(390%);
+            }
+
+
+
+            72% {
+                transform: translateX(750%)translateY(160%);
+            }
+
+            86% {
+                transform: translateX(180%)translateY(330%);
+            }
+
+            95% {
+                transform: translateX(100%)translateY(330%);
+            }
+
+            100% {
+                transform: translateX(100%)translateY(330%);
+            }
+
+
+
+
+
+        }
+
+        @keyframes burn {
+            0% {
+                opacity: 0;
+            }
+
+            90% {
+                opacity: 0;
+            }
+
+            95% {
+
+                transform: translateX(100%)translateY(350%);
+            }
+
+            98% {
+                opacity: 1;
+
+                transform: translateX(100%)translateY(330%);
+            }
+
+            100% {
+                transform: translateX(100%)translateY(330%);
+            }
+        }
+
+        .routing {
+            animation-name: route;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+
+        .burning {
+            animation-name: burn;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+
+
+
+
+
+
+        @media all and (max-width:1024px)and (min-width:750px) {
+            h1 {
+                color: white;
+                position: absolute;
+                left: 70px;
+                line-height: 75px;
+                font-size: 55px;
+                bottom: 200px;
+                left: 40px;
+            }
+
+            h2 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 480px;
+                margin-top: 50px;
+                font-size: 25px
+            }
+
+            p {
+                font-size: 16px;
+                width: 400px;
+
+            }
+
+            blockquote {
+                font-size: 14px;
+                margin-left: 100px;
+
+                font-weight: bold;
+
+
+            }
+        }
+
+
+
+        @media all and (max-width:750px) {
+            p {
+                font-size: 14px;
+                width: 300;
+            }
+
+            h1 {
+                color: white;
+                position: absolute;
+                left: 20px;
+                line-height: 75px;
+                font-size: 40px;
+                bottom: 400px;
+            }
+
+            h2 {
+                margin-left: auto;
+                margin-right: auto;
+                width: 350px;
+                margin-top: -100px;
+                font-size: 18px
+            }
+
+            blockquote {
+                font-size: 14px;
+                margin-left: 90px;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!--首圖-->
+
+    <div class="full-screen" style="overflow:hidden">
+
+        <video loop autoplay muted class="fireboat">
+            <source src="hero-image-fireboat.mp4" width="100%" height="auto">
+            </source></video>
+        <!--大標-->
+        <h1>睽違三年<br>迎王祭凝聚東港情</h1>
+    </div>
+    <div style="text-align: center; ">
+        <h2 style="margin-left:auto;margin-right:auto;border-left-width: 5px;border-left--color: #ffffff;border-left-style: solid; ">「迎王，是東港人的宿命；<br>
+            傳承，是年輕世代的使命；<br>
+            我的轎班身分，便是與王爺的約定。」<br>
+        </h2>
+        <h2 style="margin-top:10px;text-align:right;">
+        -梁竣雅</h2>
+    </div>
+
+
+
+
+    <!--第一段-->
+    <p style="margin-top:100px;margin-left:auto; margin-right:auto; height:auto; line-height:45px;font-weight:bold; ">
+        文／張庭瑀 圖／葉峻瑀<br>
+        鑼鼓喧天，耳邊傳來陣陣鞭炮聲響，身穿各色清代傳統服飾的轎班手持長香、排成人龍，在東港的街道上護送代天巡狩的「盧大千歲爺」前進。三年一次「東港迎王平安祭典」（以下簡稱迎王祭）於4日凌晨，在「燒王船」儀式的火海中劃下句點。<br><br>
+        深夜的東港頭擠滿上萬人潮、燈火通明，每逢迎王祭民眾徹夜未眠，只為親眼見證恭送王爺的盛景。「迎王，是東港人的宿命；傳承，是年輕世代的使命；我的轎班身分，便是與王爺的約定。」國立中山大學社會學系學生梁竣雅為東港頂中街轎班的一份子，他認為迎王祭不單是「燒王船」可以詮釋的慶典。信眾從迎王到送王，遵照古法、依循舊有禮節辦理，凸顯了東港居民對千歲爺虔誠街的心。
+    </p>
+    <!--迎王圖-->
+    <div style="margin-left:auto;margin-right:auto;width:80%;height:auto;margin-top:33px">
+
+        <img class="full-screen" src="fire-boat-01.jpeg" style="width:100%;height:auto;margin-top:33px"></img></div>
+
+    <!--圖說1-->
+
+    <blockquote> 轎班人員護送兩層樓高的王船到鎮海公園進行「送王」儀式，<br>
+        動員人數龐大，場面壯觀，令人歎為觀止。</blockquote>
+
+    <!--第二段-->
+    <p style="margin-top:100px;margin-left:auto; margin-right:auto; height:auto; line-height:45px;font-weight:bold; ">
+        「有些人期待三年，是為了看這八天的熱鬧；但東港人卻是準備了三年，只為迎接千歲爺蒞臨。」梁竣雅表示這是東港人的共同目標，也是展現團結一心的時刻。東港人為此祭典，用了三年的時間造船，10月28日起為期八天的遶境遊行，將傳統民俗的精髓演繹到了極致。七角頭埔仔角的轎班林家弘表示，迎王祭不僅增進對家鄉的歸屬感，也更堅定自身信仰。2010年，文化部指定「東港迎王平安祭典」為國家重要民俗文化活動，部分學校會特別為迎王祭放假。迎王祭之於東港人的重要性，不言而喻。<br><br></p>
+        <div style="margin-top:30px;width:80%;position:relative;margin:0 auto;padding-bottom:65%;">
+            <div style="position:absolute;;width:100%;height:80%">
+                <img src="fire-boat-map.png" style="position:absolute;width:100%;height:100%;"></img>
+            </div>
+            <div style="position:absolute;width:6%;">
+
+                <img src="sailboat.png" class="routing" width="100%"></img>
+            </div>
+            <div style="position:absolute;width:6%;">
+                <img src="flame.png" class="burning" width="100%"></img>
+            </div>
+        </div><br>
+
+       <p style="margin-top:-75px;margin-left:auto; margin-right:auto; height:auto; line-height:45px;font-weight:bold;"> 在傳統文化逐漸沒落的現代，年輕人大多對民俗慶典冷漠，然而每三年一次的迎王祭，至今仍吸引許多東港遊子歸鄉。國立高雄大學運動健康與休閒學系學生林志穎說：「對東港人而言，迎王祭除了是一種信仰，更是一顆定心丸。」國立嘉義大學中國文學系學生許采瑄則認為，迎王祭讓遊子們有個必須回家的理由。</p>
+    
+    <!--燈籠圖-->
+    <div style="text-align:center">
+        <img src="fire-boat-02.jpeg" style="width:80%;height:auto;margin-top:33px"></img></div>
+
+    <!--圖說1-->
+
+    <blockquote
+        style="font-weight:bold;color:#eac100;text-align:right; line-height:34px;border-width:0 0 2 0; border-color:#eac100; border-style:solid">
+        迎王時挨家挨戶會掛上燈籠，<br>
+        今年是中國傳統紀年農曆的戊戌年，
+        因此燈籠上印有戊戌字樣。</blockquote>
+
+    <p style="margin-top:100px;margin-left:auto; margin-right:auto;height:auto; line-height:45px;font-weight:bold; ">
+        沙灘上，此起彼落的鞭炮聲不絕於耳，信眾以煙火歡迎千歲爺的到來。半層樓高的金紙與供品堆疊在王船之下，儀式開始後一同被火海吞噬。然而，根據全國宗教資訊網的資料指出，船身的漆料加上金紙、香與供品，在焚燒過程中會產生大量的空氣染外，殘留的灰燼所造成的污水直接流入海中，恐怕影響海洋生態以及水質。<br><br>
+
+        雖迎王祭面對環境議題與信仰的衝突，但返鄉青年多傾向延續傳統。國立中興大學土壤環境科學系學生孔郁喻提到，為了表達對神明的尊敬，民眾大量使用鞭炮和金紙，這部分的傳統難以用維護環境的理由來減少使用量。但對於污染問題，祭典已逐年改善，國立臺中科技大學國際貿易經營系學生孫千雯便有深刻感受，他指出在今年迎王祭中，部分民眾以電子鞭炮代替傳統鞭炮，「有了環保鞭炮機，炮灰相較之前已經少了很多。」民眾已意識到環境的重要性而做出改變。
+    </p>
+    <!--白天王船圖-->
+    <div style="text-align:center">
+        <img src="fire-boat-03.JPG" style="width:80%;height:auto;margin-top:33px"></img></div>
+
+    <blockquote>
+
+        迎王祭的「遷船遶境」，從東隆宮繞行東港。<br>
+        許多民眾群聚在門口，一睹船出宮的樣貌，場面頗為壯觀。</blockquote>
+
+
+    <p style="margin-top:100px;margin-left:auto; margin-right:auto; height:auto; line-height:45px;font-weight:bold; ">
+        近來，迎王祭近年成為台灣的觀光盛事，不少外國遊客特地去到現場，體驗東港淬煉已久的宗教文化。從美國來台灣教書的遊客凱蒂・卡森（Catie
+        Carson）表示，從同事口中得知迎王祭而來參加，「我們的國家沒有傳統文化，所以特別喜歡參加這樣的祭典。」來自荷蘭的吉榮・史密茨（Jeroen
+        Smits）則是首次參與迎王祭。他認為王船遶境極具特色，東港居民普天同慶的熱鬧氛圍十分吸引人，「因為要工作的緣故，無法看到燒王船，下次有機會一定要再來。」</p>
+
+
+</body>
+</head>
+
+</html>
